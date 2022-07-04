@@ -39,7 +39,7 @@ public static boolean registrarReserva(String dni,String fecha) {
 			Statement stm=cn.createStatement();
 			rs = stm.executeQuery("SELECT * FROM reservas");
 			while (rs.next()) {
-				id=id+1*3;
+				id=id+1*30;
 			}			
 			
 			datosRegistro="INSERT INTO reservas (idReserva,fecha,dniCliente) VALUES('"+id+"','"+fecha+"','"+dni+"')";
